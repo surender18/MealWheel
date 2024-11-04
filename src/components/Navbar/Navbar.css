@@ -11,6 +11,9 @@
   
     
 }
+a{
+    cursor: pointer;
+}
 
 .navbar-menu{
     display: flex;
