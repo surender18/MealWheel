@@ -1,28 +1,23 @@
 import React, { useContext, useState } from 'react'
 import  './Navbar.css'
 import { assets } from '../../assets/assets'
-// import { Link } from 'react-router-dom'
-import {Link} from 'react-scroll'
+import { Link } from 'react-router-dom'
 import { StoreContext } from '../../Context/StoreContext'
 
 const Navbar = ({setShowLogin}) => {
 
-  const [menu,setMenu] = useState("Home");
+  const [menu,setMenu] = useState("menu");
   const {getTotalCartAmount} = useContext(StoreContext);
 
   return (
     <div className='navbar'>
-  <img className='logo' src={assets.logo} alt="" />
+  <img className='logo' src={assets.logo} alt="logo" />
       <ul className="navbar-menu">
-        <li> <Link to='header' smooth='true' offset={-10} duration={100}>Home</Link> </li>
-        <li><Link to='explore-menu' smooth='true' offset={-20} duration={100}>Menu</Link></li>
-        <li><Link to='app-download' smooth='true' offset={-102} duration={100}>Mobile App</Link></li>
-        <li><Link to='footer' smooth='true' offset={-102} duration={500}>Contact Us</Link></li>
 
-        {/* <a  onClick={()=>setMenu("Home")} className={`${menu==="Home"?"active":""}`}>Home</a>
-        <a  onClick={()=>setMenu("menu")} className={`${menu==="menu"?"active":""}`}>Menu</a>
-        <a  onClick={()=>setMenu("mob-app")} className={`${menu==="mob-app"?"active":""}`}>Mobile app</a>
-        <a  onClick={()=>setMenu("contact")} className={`${menu==="contact"?"active":""}`}>Contact us</a> */}
+        <Link to='/' onClick={()=>setMenu("Home")} className={`${menu==="Home"?"active":""}`}>Home</Link> 
+        <a href='#explore-menu' onClick={()=>setMenu("Menu")} className={`${menu==="Menu"?"active":""}`}>Menu</a>
+        <a href='#app-download'  onClick={()=>setMenu("Mobile-app")} className={`${menu==="Mobile-app"?"active":""}`}>Mobile-app</a>
+        <a href='#footer' onClick={()=>setMenu("contact")} className={`${menu==="contact"?"active":""}`}>Contact us</a>    
        
       </ul> 
       <div className="navbar-right">

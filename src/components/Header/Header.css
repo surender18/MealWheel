@@ -1,9 +1,10 @@
 .header{
-    height: 34vw;
+    height: 36vw;
     margin: 30px auto;
     background: url('/header_img.png') no-repeat ;
     background-size: contain;
     position: relative;
+    margin-bottom: 60px;
 }
 .header-contents{
     position: absolute;
@@ -33,9 +34,14 @@
     color: #747474;
     font-weight: 500;
     padding: 1vw 2.3vw;
-    background-color: white;
+    background-color: whitesmoke;
     font-size: max(1vw,13px);
     border-radius: 50px;
+}
+.header-contents button:hover{
+background-color: rgb(255, 89, 0);
+color: white;
+transition: 0.5s;
 }
 
 @media (max-width:1050px) {

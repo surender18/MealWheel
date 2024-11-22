@@ -6,14 +6,10 @@
     font-family: Outfit;
 }
 .navbar .logo{
-    width: 150px;
-   
-  
-    
+    width: 150px;  
 }
-a{
-    cursor: pointer;
-}
+
+ 
 
 .navbar-menu{
     display: flex;
@@ -32,7 +28,7 @@ a{
     background: transparent;
     font-size: 16px;
     color: #49557e;
-    border: 1px solid tomato;
+    border: 1px solid rgb(224, 189, 183);
     padding:  10px 30px;
     border-radius: 50px;
     cursor: pointer;
@@ -40,7 +36,7 @@ a{
 }
 
 .navbar button:hover{
-    background-color:#fceeec ;
+    background-color:#f9aa9e ;
 }
 .navbar .active{
     padding-bottom: 2px;
