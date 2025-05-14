@@ -11,10 +11,10 @@
     transition: transform .5s;
    
 }
-.food-item:hover{
+/* .food-item:hover{
     transform: translateZ(5px) rotateX(20deg) rotateY(0deg);
 
-}
+} */
 .food-item-image{
     width: 100%;
     border-radius: 15px 15px 0px 0px;
